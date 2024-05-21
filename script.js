@@ -1,2 +1,5 @@
-// This script is intentionally left blank for now.
-// Add JavaScript code here to enhance your website's interactivity.
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your message. We will get back to you soon.');
+});
+
