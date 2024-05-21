@@ -3,69 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberSecure Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Integration Industries</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">CyberSecure Solutions</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-content">
-            <h1>Secure Your Digital Future</h1>
-            <p>Providing top-notch cybersecurity and software engineering services.</p>
-            <a href="#services" class="btn">Our Services</a>
+        <div class="container">
+            <div class="logo">Integration Industries</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <main>
-        <section id="home">
-            <h2>Welcome to CyberSecure Solutions</h2>
-            <p>We are dedicated to protecting your digital assets and enhancing your software capabilities.</p>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="services-container">
-                <div class="service-card">
-                    <h3>Cybersecurity</h3>
-                    <p>Comprehensive security assessments and solutions to protect your business from threats.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Software Engineering</h3>
-                    <p>Custom software development tailored to meet your business needs.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Consulting</h3>
-                    <p>Expert advice to optimize your cybersecurity and software strategies.</p>
-                </div>
-            </div>
-        </section>
-        <section id="about">
+    
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1>Innovating the Future of Technology</h1>
+            <p>We provide cutting-edge solutions for your business.</p>
+            <a href="#services" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
             <h2>About Us</h2>
-            <p>With years of experience in the industry, our team is equipped with the knowledge and skills to deliver exceptional results.</p>
-        </section>
-        <section id="contact">
+            <p>Integration Industries is dedicated to providing innovative technology solutions. Our mission is to drive success for our clients through advanced integration and exceptional service.</p>
+            <img src="team.jpg" alt="Our Team">
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Service 1</h3>
+                <p>Brief description of Service 1.</p>
+            </div>
+            <div class="service">
+                <h3>Service 2</h3>
+                <p>Brief description of Service 2.</p>
+            </div>
+            <div class="service">
+                <h3>Service 3</h3>
+                <p>Brief description of Service 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Our Projects</h2>
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <p>Description of Project 1.</p>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <p>Description of Project 2.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
             <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
+                
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
+                
+                <label for="message">Message</label>
                 <textarea id="message" name="message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
+                
+                <button type="submit">Submit</button>
             </form>
-        </section>
-    </main>
+            <div class="contact-info">
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: Main@integrationindustries.com</p>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 CyberSecure Solutions. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Integration Industries. All rights reserved.</p>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

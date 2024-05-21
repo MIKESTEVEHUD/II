@@ -1,136 +1,102 @@
-/* General Styles */
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+.logo {
+    color: burlywood;
+    align-items: center;
+    font-size: 50px;
+    background-color: grey;
+    padding:50px 200;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 header {
-    background: linear-gradient(135deg, #333, #555);
+    background: gray;
     color: #fff;
     padding: 20px 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+
 }
 
-header .logo {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    font-weight: 700;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
+header div  {
+    float: left;
     align-items: center;
+    margin-left: 100px;
+    padding: 20px;
 }
 
-nav ul {
+header nav {
+    float: right;
+}
+
+header nav ul {
+    margin: 20px;
     list-style: none;
-    padding: 0;
+    align-items: center;
     margin: 0;
+    background-color: gray;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin-left: 20px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #007bff;
-}
-
-.header-content {
-    padding: 50px 20px;
-}
-
-.header-content h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.header-content p {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    background: #007bff;
+.hero-section {
+    background: url('hero.jpg') no-repeat center center/cover;
     color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section .btn {
+    color: #fff;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s ease;
 }
 
-.btn:hover {
-    background: #0056b3;
+.about-section, .services-section, .projects-section, .contact-section {
+    padding: 50px 0;
 }
 
-main {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.about-section img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
 }
 
-section {
-    margin-bottom: 40px;
-}
-
-h2 {
+.service, .project {
     margin-bottom: 20px;
-    text-align: center;
-    font-size: 2em;
-    font-weight: 700;
 }
 
-.services-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+.contact-section form {
+    margin-bottom: 20px;
 }
 
-.service-card {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
+.contact-section form label {
+    display: block;
     margin-bottom: 5px;
-    font-weight: 700;
 }
 
-form input,
-form textarea {
+.contact-section form input, .contact-section form textarea {
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+}
+
+.contact-section form button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
     border-radius: 5px;
-    font-size: 1em;
 }
 
 footer {
@@ -138,6 +104,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    position: relative;
-    width: 100%;
 }
