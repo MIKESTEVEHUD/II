@@ -1,24 +1,30 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: lightblue;
 }
 .logo {
-    color: burlywood;
-    align-items: center;
+    color: white;
+    text-align: center; /* Center the text horizontally */
     font-size: 50px;
-    background-color: grey;
-    padding:50px 200;
+    padding: 20px 0; /* Adjust padding as needed */
+    width: 100%; /* Make the width of the element 100% of the viewport */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
 }
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 
 header {
-    background: gray;
     color: #fff;
-    padding: 20px 0;
-
-}
+    padding: 0px 0;
+    display: flex;
+    flex-direction: column;     
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */ 
+    border: 2px solid #fff;
+  }
 
 header div  {
     float: left;
@@ -27,16 +33,11 @@ header div  {
     padding: 20px;
 }
 
-header nav {
-    float: right;
-}
-
 header nav ul {
     margin: 20px;
     list-style: none;
     align-items: center;
     margin: 0;
-    background-color: gray;
 }
 
 header nav ul li {
